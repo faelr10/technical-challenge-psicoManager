@@ -9,18 +9,24 @@ O projeto consiste em um sistema de chat em tempo real desenvolvido para demonst
 ### Servidor
 
 1. Instale e inicie o MongoDB.
-2. Tenha o Node.js instalado (versão x ou superior).
+2. Tenha o Node.js instalado.
 3. Clone o repositório.
 4. Instale as dependências do projeto:
 
+npm install
+
 5. Configure as variáveis de ambiente no arquivo `.env` com o `DATABASE_URL` e `PORT`.
 6. Inicie o servidor de desenvolvimento:
+
+npm run start:dev
 
 ### Frontend
 
 1. Clone o repositório em Laravel.
 2. Configure a variável de ambiente `SOCKET_URL` no arquivo `.env` com o endereço do servidor Socket.IO.
 3. Inicie o servidor Laravel com o comando:
+
+php artisan serve --port=3000
 
 Isso fará com que o projeto rode na porta 3000.
 
