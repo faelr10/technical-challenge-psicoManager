@@ -1,0 +1,43 @@
+body {
+    background-color: #00272B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 100px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 60%;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    width: 100%;
+}
