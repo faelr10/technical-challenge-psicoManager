@@ -13,12 +13,16 @@ O projeto consiste em um sistema de chat em tempo real desenvolvido para demonst
 3. Clone o repositório.
 4. Instale as dependências do projeto:
 
+```bash
 npm install
+```
 
 5. Configure as variáveis de ambiente no arquivo `.env` com o `DATABASE_URL` e `PORT`.
 6. Inicie o servidor de desenvolvimento:
 
+```bash
 npm run start:dev
+```
 
 ### Frontend
 
@@ -26,7 +30,9 @@ npm run start:dev
 2. Configure a variável de ambiente `SOCKET_URL` no arquivo `.env` com o endereço do servidor Socket.IO.
 3. Inicie o servidor Laravel com o comando:
 
+```bash
 php artisan serve --port=3000
+```
 
 Isso fará com que o projeto rode na porta 3000.
 
@@ -40,14 +46,14 @@ Acesse a interface de usuário localmente através da URL [http://localhost:3000
 
 - Node.js
 - NestJS
-- Prisma.io como ORM
+- Mongoose como ORM
 - Socket.IO para comunicação em tempo real
 
 ### Frontend
 
 - PHP
 - Framework Laravel
-- AJAX ou Axios (a definir)
+- Socket.IO para comunicação em tempo real
 
 ### Banco de Dados
 
@@ -55,6 +61,6 @@ Acesse a interface de usuário localmente através da URL [http://localhost:3000
 
 ## Decisões de Design
 
-- Utilização do padrão Controller, Service e Repository para os módulos que recebem requisições HTTP e interagem com o banco de dados.
+- Utilização do padrão Service e Repository para os módulos que recebem requisições e interagem com o banco de dados.
 - Escolha do framework NestJS devido às ferramentas disponibilizadas, facilitando configurações referentes ao Socket.IO, além de fornecer uma estrutura pré-definida.
 - A arquitetura de código foi pensada visando o crescimento da aplicação, como a criação de usuários, autenticação e criação de salas privadas ou públicas.
